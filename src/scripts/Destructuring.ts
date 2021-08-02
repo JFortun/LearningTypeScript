@@ -32,7 +32,7 @@ console.log('Food 1: ' + food[0]);
 console.log('Food 2: ' + food[1]);
 console.log('Food 3: ' + food[2]);
 
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
@@ -47,7 +47,7 @@ const tablet: Product = {
     price: 450
 }
 
-function calcTax(products: Product[]): number {
+export function calcTax(products: Product[]): number {
     let total = 0;
 
     products.forEach((product) => {
